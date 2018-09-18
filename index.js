@@ -87,6 +87,7 @@ module.exports = function zipBucket(storage){
 		const options = {
 		    destination: toPath,
 		    validation: 'md5',
+		    resumable: false,
 		    metadata: {
 			contentType: 'application/zip'
 		    }
